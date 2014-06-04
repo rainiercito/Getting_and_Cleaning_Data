@@ -16,7 +16,7 @@ An identifier of the subject who carried out the experiment
 
 
 
-The dataset includes the following files:
+The Input dataset includes the following files:
 =========================================
 
 - 'README.txt'
