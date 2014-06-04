@@ -1,4 +1,4 @@
-Getting_and_Cleaning_Data
+Course project for Getting_and Cleaning_Data module
 =========================
 
 
@@ -14,4 +14,6 @@ This Github folder has three files: (i) CodeBook.md file which describes the var
 
 The run_analysis.R script must use descriptive activity names to name the activities in the data set and 
 appropriately labels with descriptive variable names.
+
+The run_analysis.R script files uses two data files: test and training. 
 
