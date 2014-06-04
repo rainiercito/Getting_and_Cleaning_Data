@@ -13,3 +13,14 @@ Triaxial Angular velocity from the gyroscope
 A 561-feature vector with time and frequency domain variables
 Its activity label
 An identifier of the subject who carried out the experiment
+
+
+Input Code reference guide:
+       ------------------
+       Code Description
+-1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
