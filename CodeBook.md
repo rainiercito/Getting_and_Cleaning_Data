@@ -46,11 +46,21 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
 
-It is required to transform the input data sets into a unified data set
+Procedure
 =================
+1.  We need to read X_train.txt, Y_train.txt, and subject_train.txt files from the data folder where they are located, and store them in trainData, trainLabel and trainSubject variables. The same procedure must be done for X_test.txt, Y_test.txt and subject_test.txt and store them in testData, testLabel and testsubject variables
 
+2. We need to concatenate the test and train Data. In order to make this happen, concatenate testData to trainData into a dataframe simply called Info. Also, the subjects and the labels need to be contatenated too; therefore, we need to concatenate testSubject and trainSubject to a subject data frame; and the trainLabel and testLabel to a label data frame
+
+3. We need to read the features.txt file and select only the measurements on the mean and standard deviation and place them in to a vector variable called features; then we need to clean the names of the features selected  -Remove the spaces and "-" from each name
+
+4.We need to read the activites lables stored in the activity_labels.txt file and assigned to the activities vector. Also, we need to remove the undersocre and make set all activies lables lowercase. 
+
+5. We need to subset the Info data frame based on the features vector defined above and called it Info_subset
+
+6. We need to add to the Info_subset the subjects and the activity label data and saved under the "merged_data.txt" name
   
-
+7. We need to generate an independent tidy data set called "data_with_means.txt" file with the average of each measurement for each activity and each subject. 
 
 Notes:
 ======
