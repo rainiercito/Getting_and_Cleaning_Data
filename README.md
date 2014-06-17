@@ -18,3 +18,5 @@ appropriately labels with descriptive variable names.
 The run_analysis.R script files uses two data files: test and training. 
 
 
+
+
